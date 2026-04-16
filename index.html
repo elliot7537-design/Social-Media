@@ -1,138 +1,322 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Portfolio Reel — Web Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GROVE — Botanical Wellness</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="viewport">
-    <div class="stage" id="stage">
 
-      <!-- SCENE 1 — TITLE -->
-      <section class="scene" id="scene-1">
-        <div class="grid-bg"></div>
-        <div class="title-block">
-          <div class="title-line"><span class="title-word sans">WEB</span></div>
-          <div class="title-line"><span class="title-word serif italic">Design</span><span class="title-swipe"></span></div>
-          <div class="title-line"><span class="title-word sans">THAT MOVES.</span></div>
-        </div>
-        <div class="corner tl">PORTFOLIO / 2026</div>
-        <div class="corner tr">REEL — 01</div>
-        <div class="corner bl">◎ NOW PLAYING</div>
-        <div class="corner br">01 / 05</div>
-      </section>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">GROVE</a>
+    <ul class="nav-links">
+      <li><a href="#">Story</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Journal</a></li>
+      <li><a href="#">Stockists</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Shop Now</a>
+  </nav>
 
-      <!-- SCENE 2 — DESKTOP SHOWCASE -->
-      <section class="scene" id="scene-2">
-        <div class="scene-label">CASE 01 — LANDING PAGE</div>
-        <div class="browser">
-          <div class="browser-chrome">
-            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-            <div class="address-bar">studio.design/case-01</div>
-          </div>
-          <div class="browser-screen">
-            <div class="browser-scroll">
-              <!-- Fake landing page -->
-              <div class="fake-hero">
-                <div class="fake-nav">
-                  <div class="logo-mark">◉ STUDIO</div>
-                  <div class="nav-links"><span></span><span></span><span></span><span></span></div>
-                </div>
-                <div class="hero-headline">Bold<br/><em>ideas</em><br/>ship fast.</div>
-                <div class="hero-cta">Start a project →</div>
-              </div>
-              <div class="fake-section alt">
-                <div class="section-eyebrow">— WORK</div>
-                <div class="fake-grid">
-                  <div class="card c1"></div>
-                  <div class="card c2"></div>
-                  <div class="card c3"></div>
-                  <div class="card c4"></div>
-                </div>
-              </div>
-              <div class="fake-section">
-                <div class="section-eyebrow">— ABOUT</div>
-                <div class="big-quote">"We design <em>systems</em>, not screens."</div>
-              </div>
-              <div class="fake-section alt">
-                <div class="section-eyebrow">— CONTACT</div>
-                <div class="footer-cta">Let's build →</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tag-chip">LIVE DEMO</div>
-      </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Est. 2019 · Botanical Wellness</span>
+      <h1 class="hero-title">
+        <span class="hero-line"><span>Nature,</span></span>
+        <span class="hero-line italic"><span>Distilled.</span></span>
+      </h1>
+      <p class="hero-sub">Premium plant-based skincare, harvested from wild forests<br>and crafted for the modern ritual.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">Explore Collection</a>
+        <a href="#" class="btn-ghost">Our Story →</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-card hero-card--1">
+        <div class="hero-card-img" style="background: linear-gradient(160deg, #3D5A38 0%, #1A2E18 100%)"></div>
+        <span class="hero-card-label">Wild Harvest</span>
+      </div>
+      <div class="hero-card hero-card--2">
+        <div class="hero-card-img" style="background: linear-gradient(160deg, #8B7355 0%, #4A3520 100%)"></div>
+        <span class="hero-card-label">Botanical Extract</span>
+      </div>
+      <div class="hero-card hero-card--3">
+        <div class="hero-card-img" style="background: linear-gradient(160deg, #C4906A 0%, #7A4828 100%)"></div>
+        <span class="hero-card-label">Pure Formula</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="h-stat-num">48</span><span class="h-stat-label">Products</span></div>
+      <div class="h-stat-divider"></div>
+      <div class="hero-stat"><span class="h-stat-num">12</span><span class="h-stat-label">Countries</span></div>
+      <div class="h-stat-divider"></div>
+      <div class="hero-stat"><span class="h-stat-num">98%</span><span class="h-stat-label">Natural</span></div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-      <!-- SCENE 3 — MOBILE SHOWCASE -->
-      <section class="scene" id="scene-3">
-        <div class="scene-label">CASE 02 — PRODUCT UI</div>
-        <div class="phones">
-          <div class="phone phone-a">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="p-status">9:41</div>
-              <div class="p-title">Pricing</div>
-              <div class="p-tier tier-a"><b>Starter</b><span>$0</span></div>
-              <div class="p-tier tier-b highlight"><b>Pro</b><span>$24</span></div>
-              <div class="p-tier tier-c"><b>Team</b><span>$96</span></div>
-              <div class="p-cta">Choose plan →</div>
-            </div>
-          </div>
-          <div class="phone phone-b">
-            <div class="phone-notch"></div>
-            <div class="phone-screen dark">
-              <div class="p-status light">9:41</div>
-              <div class="p-avatar"></div>
-              <div class="p-name">@elliot</div>
-              <div class="p-stat-row">
-                <div><b>128</b><span>Projects</span></div>
-                <div><b>4.9</b><span>Rating</span></div>
-                <div><b>12y</b><span>Design</span></div>
-              </div>
-              <div class="p-pill">Follow</div>
-            </div>
-          </div>
-        </div>
-        <div class="tag-chip">iOS · Android</div>
-      </section>
-
-      <!-- SCENE 4 — KINETIC TYPE GRID -->
-      <section class="scene" id="scene-4">
-        <div class="type-grid">
-          <div class="type-cell">DESIGN</div>
-          <div class="type-cell accent">BRAND</div>
-          <div class="type-cell">MOTION</div>
-          <div class="type-cell ink">UI</div>
-          <div class="type-cell">UX</div>
-          <div class="type-cell accent">SYSTEM</div>
-          <div class="type-cell">WEB</div>
-          <div class="type-cell ink">FLOW</div>
-          <div class="type-cell serif italic">Craft.</div>
-        </div>
-      </section>
-
-      <!-- SCENE 5 — OUTRO / CTA -->
-      <section class="scene" id="scene-5">
-        <div class="outro">
-          <div class="outro-eyebrow">— AVAILABLE FOR WORK</div>
-          <div class="outro-handle"><span class="handle">@YOUR-HANDLE</span></div>
-          <div class="outro-underline"></div>
-          <div class="outro-cta">LET'S BUILD →</div>
-        </div>
-        <div class="corner br">FIN · LOOP</div>
-      </section>
-
-      <!-- Record-ready frame + hint (hidden with R key) -->
-      <div class="frame" aria-hidden="true"></div>
-      <div class="hint" id="hint">press <kbd>R</kbd> to toggle frame · <kbd>space</kbd> to pause</div>
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Wild Harvest</span><span class="dot">·</span>
+      <span>Botanical Extract</span><span class="dot">·</span>
+      <span>Forest Skincare</span><span class="dot">·</span>
+      <span>Pure Formula</span><span class="dot">·</span>
+      <span>Sustainable Luxury</span><span class="dot">·</span>
+      <span>Zero Harm</span><span class="dot">·</span>
+      <span>Cruelty Free</span><span class="dot">·</span>
+      <span>Wild Harvest</span><span class="dot">·</span>
+      <span>Botanical Extract</span><span class="dot">·</span>
+      <span>Forest Skincare</span><span class="dot">·</span>
+      <span>Pure Formula</span><span class="dot">·</span>
+      <span>Sustainable Luxury</span><span class="dot">·</span>
+      <span>Zero Harm</span><span class="dot">·</span>
+      <span>Cruelty Free</span><span class="dot">·</span>
     </div>
   </div>
+
+  <!-- ABOUT / MISSION -->
+  <section class="about">
+    <div class="about-text">
+      <span class="section-label reveal-item">Our Philosophy</span>
+      <h2 class="section-title reveal-item">
+        We believe the<br>
+        <em>forest holds</em><br>
+        every answer.
+      </h2>
+      <p class="about-body reveal-item">
+        GROVE was born from a simple conviction: nature already contains everything we need. Our team of botanical scientists and forest foragers work in tandem to bring you formulas that are as effective as they are clean.
+      </p>
+      <a href="#" class="btn-outline reveal-item">Read Our Story</a>
+    </div>
+    <div class="about-visual">
+      <div class="about-img about-img--main reveal-item" style="background: linear-gradient(145deg, #4A6B44 0%, #1E3A1A 60%, #2D5228 100%)">
+        <div class="about-img-tag">Boreal Forest, Norway · 2024</div>
+      </div>
+      <div class="about-img about-img--sm reveal-item" style="background: linear-gradient(145deg, #8B7B5A 0%, #4A3A28 100%)"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat-block reveal-item">
+      <span class="big-num" data-target="48">0</span>
+      <span class="stat-desc">plant-based products</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-block reveal-item" style="--delay:100ms">
+      <span class="big-num" data-target="12">0</span>
+      <span class="stat-desc">countries stocked</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-block reveal-item" style="--delay:200ms">
+      <span class="big-num" data-target="6">0</span>
+      <span class="stat-desc">years perfecting formulas</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-block reveal-item" style="--delay:300ms">
+      <span class="big-num" data-target="98">0</span>
+      <span class="stat-desc">% naturally derived</span>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <div class="products-header">
+      <div>
+        <span class="section-label reveal-item">The Collection</span>
+        <h2 class="section-title reveal-item">Skincare that<br><em>works with nature.</em></h2>
+      </div>
+      <a href="#" class="btn-outline reveal-item">View All Products</a>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal-item" style="--delay:0ms">
+        <div class="product-img" style="background: linear-gradient(160deg, #6B8B5A 0%, #2A4020 100%)">
+          <div class="product-overlay"><a href="#" class="product-cta">Quick View</a></div>
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <h3>Forest Serum</h3>
+          <p>Boreal extract + hyaluronic complex</p>
+          <span class="product-price">$78</span>
+        </div>
+      </div>
+      <div class="product-card reveal-item" style="--delay:100ms">
+        <div class="product-img" style="background: linear-gradient(160deg, #A07B5A 0%, #4A2D18 100%)">
+          <div class="product-overlay"><a href="#" class="product-cta">Quick View</a></div>
+        </div>
+        <div class="product-info">
+          <h3>Root Balm</h3>
+          <p>Adaptogenic mushroom + shea</p>
+          <span class="product-price">$54</span>
+        </div>
+      </div>
+      <div class="product-card reveal-item" style="--delay:200ms">
+        <div class="product-img" style="background: linear-gradient(160deg, #7B8B7A 0%, #2A3828 100%)">
+          <div class="product-overlay"><a href="#" class="product-cta">Quick View</a></div>
+          <span class="product-badge new">New</span>
+        </div>
+        <div class="product-info">
+          <h3>Birch Mist</h3>
+          <p>Toning facial spray + antioxidants</p>
+          <span class="product-price">$46</span>
+        </div>
+      </div>
+      <div class="product-card reveal-item" style="--delay:300ms">
+        <div class="product-img" style="background: linear-gradient(160deg, #C49A6A 0%, #7A5030 100%)">
+          <div class="product-overlay"><a href="#" class="product-cta">Quick View</a></div>
+        </div>
+        <div class="product-info">
+          <h3>Resin Oil</h3>
+          <p>Conifer sap + rosehip face oil</p>
+          <span class="product-price">$92</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE SPLIT — Dark section -->
+  <section class="feature-split">
+    <div class="split-text">
+      <span class="section-label light reveal-item">The Grove Process</span>
+      <h2 class="section-title light reveal-item">
+        From forest floor<br>to <em class="sage">your ritual.</em>
+      </h2>
+      <div class="process-steps">
+        <div class="step reveal-item" style="--delay:0ms">
+          <span class="step-num">01</span>
+          <div>
+            <h4>Wild Harvest</h4>
+            <p>Our foragers identify and hand-pick botanicals at peak potency, working with the forest's natural cycles.</p>
+          </div>
+        </div>
+        <div class="step reveal-item" style="--delay:150ms">
+          <span class="step-num">02</span>
+          <div>
+            <h4>Cold Extraction</h4>
+            <p>Low-heat methods preserve every active compound, retaining the full spectrum of botanical intelligence.</p>
+          </div>
+        </div>
+        <div class="step reveal-item" style="--delay:300ms">
+          <span class="step-num">03</span>
+          <div>
+            <h4>Clean Formulation</h4>
+            <p>Blended in certified organic facilities, tested on volunteers, never on animals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="split-img reveal-item">
+      <div class="split-img-inner" style="background: radial-gradient(ellipse at 40% 60%, #4A7A3A 0%, transparent 65%), linear-gradient(180deg, #1A2E18 0%, #0D1A0B 100%)"></div>
+      <div class="split-img-caption">Cold extraction lab, Bergen · Norway</div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="journal">
+    <div class="journal-header">
+      <span class="section-label reveal-item">From the Journal</span>
+      <h2 class="section-title reveal-item">Stories from<br><em>the wild.</em></h2>
+    </div>
+    <div class="journal-grid">
+      <article class="journal-card reveal-item" style="--delay:0ms">
+        <div class="journal-img" style="background: linear-gradient(160deg, #5A7A4A 0%, #1E3A18 100%)"></div>
+        <div class="journal-info">
+          <span class="journal-tag">Ingredients</span>
+          <h3>The Healing Power of Boreal Lichens</h3>
+          <span class="journal-date">March 2024</span>
+        </div>
+      </article>
+      <article class="journal-card reveal-item" style="--delay:120ms">
+        <div class="journal-img" style="background: linear-gradient(160deg, #8B6B4A 0%, #3A2010 100%)"></div>
+        <div class="journal-info">
+          <span class="journal-tag">Ritual</span>
+          <h3>Building a Morning Skincare Ritual That Grounds You</h3>
+          <span class="journal-date">February 2024</span>
+        </div>
+      </article>
+      <article class="journal-card reveal-item" style="--delay:240ms">
+        <div class="journal-img" style="background: linear-gradient(160deg, #7A8A6A 0%, #2A3A20 100%)"></div>
+        <div class="journal-info">
+          <span class="journal-tag">Sourcing</span>
+          <h3>Inside Norway's Last Old-Growth Forests</h3>
+          <span class="journal-date">January 2024</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <div class="quote-inner reveal-item">
+      <span class="quote-mark">"</span>
+      <blockquote>
+        The only skincare brand I've tried<br>
+        that <em>actually feels like nature.</em>
+      </blockquote>
+      <cite>— Ingrid Møller, Oslo · Verified customer</cite>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-inner reveal-item">
+      <span class="section-label light">Start Your Ritual</span>
+      <h2 class="cta-title">Ready to come<br><em>back to nature?</em></h2>
+      <div class="cta-actions">
+        <a href="#" class="btn-primary large">Shop the Collection</a>
+        <a href="#" class="btn-ghost-light">Find a Stockist →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">GROVE</span>
+        <p>Botanical wellness, rooted in nature.</p>
+      </div>
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="#">Skincare</a>
+          <a href="#">Wellness</a>
+          <a href="#">Bundles</a>
+          <a href="#">Gift Sets</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">Our Story</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Wholesale</a>
+          <a href="#">Stockists</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GROVE Botanicals. All rights reserved.</span>
+      <span>Privacy · Terms</span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
