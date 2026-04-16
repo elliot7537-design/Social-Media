@@ -156,7 +156,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 80px;
+  padding: 0 70px;
   gap: 4px;
 }
 .title-line {
@@ -165,20 +165,22 @@ html, body {
   line-height: .95;
   display: flex;
   align-items: baseline;
+  white-space: nowrap;
 }
 .title-word {
   display: inline-block;
   transform: translateY(110%);
   font-weight: 900;
-  font-size: 220px;
+  font-size: 170px;
   letter-spacing: -.04em;
   color: var(--ink);
   animation: titleRise var(--duration) infinite linear;
+  white-space: nowrap;
 }
 .title-word.serif {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 260px;
+  font-size: 210px;
   letter-spacing: -.02em;
   padding: 0 20px;
   position: relative;
@@ -362,7 +364,7 @@ html, body {
 .big-quote em { font-style: italic; color: var(--accent); }
 .footer-cta {
   font-family: var(--font-serif);
-  font-size: 160px;
+  font-size: 120px;
   line-height: 1;
   color: var(--ink);
 }
@@ -531,7 +533,7 @@ html, body {
   display: grid;
   place-items: center;
   font-weight: 900;
-  font-size: 88px;
+  font-size: 60px;
   letter-spacing: -.03em;
   color: var(--ink);
   transform: scale(.6);
@@ -539,13 +541,15 @@ html, body {
   animation-duration: var(--duration);
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(.22,1,.36,1);
+  white-space: nowrap;
+  padding: 0 8px;
 }
 .type-cell.accent { background: var(--accent); color: var(--ink); }
 .type-cell.ink { background: var(--ink); color: var(--paper); }
 .type-cell.serif {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 120px;
+  font-size: 96px;
 }
 .type-cell.serif.italic { font-style: italic; }
 
@@ -586,7 +590,8 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 0 80px;
+  padding: 0 60px;
+  text-align: center;
 }
 .outro-eyebrow {
   font-size: 20px;
@@ -609,10 +614,11 @@ html, body {
   display: inline-block;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 180px;
+  font-size: 130px;
   letter-spacing: -.02em;
   transform: translateY(110%);
   animation: handleRise var(--duration) infinite linear;
+  white-space: nowrap;
 }
 @keyframes handleRise {
   0%, 87% { transform: translateY(110%); }
@@ -628,7 +634,7 @@ html, body {
 }
 @keyframes underline {
   0%, 90% { width: 0; }
-  93%, 99% { width: 600px; }
+  93%, 99% { width: 480px; }
   100% { width: 0; opacity: 0; }
 }
 .outro-cta {
